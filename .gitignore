@@ -10,3 +10,4 @@ ENV/
 *.log
 *.nbconvert.ipynb
 __pycache__
+dsevn

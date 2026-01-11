@@ -3,6 +3,18 @@
 An end-to-end Machine Learning project that predicts whether a telecom customer is likely to churn and provides business insights using **EDA, Feature Importance, Confusion Matrix, and Survival Analysis**.  
 The trained model is deployed as a **FastAPI REST API** and containerized using **Docker**.
 
+📌 Project Description 
+
+This project focuses on predicting customer churn in the telecom industry using machine learning and survival analysis. The goal is to identify customers who are likely to leave the service and understand the factors and time patterns that influence churn behavior.
+
+The project begins with exploratory data analysis to study churn trends across customer segments such as contract type, payment method, and internet service. Feature importance analysis is used to identify the key drivers of churn, while classification models are trained to predict whether a customer will churn.
+
+In addition to traditional classification, the project applies Kaplan–Meier survival analysis to analyze customer retention over time and compare survival probabilities across different customer groups. This provides deeper business insights into when customers are most likely to churn, not just whether they will churn.
+
+The trained machine learning pipeline is deployed as a FastAPI-based REST API with input validation, model versioning, and health checks. The entire application is containerized using Docker and published to Docker Hub, making it easy to deploy and run consistently across environments.
+
+Overall, this project demonstrates an end-to-end workflow covering data analysis, machine learning modeling, interpretability, survival analysis, and production-ready deployment.
+
 ---
 
 ## 🚀 Project Overview
@@ -102,6 +114,23 @@ Shows how well the model distinguishes between churned and non-churned customers
 - Some false positives → acceptable tradeoff for retention strategy
 
 ---
+
+### 🔹 ROC-CURVE
+
+![ROC-CURVE](images\roc_auc_curve.png)
+
+**Insight:**
+
+“The ROC curve compares True Positive Rate vs False Positive Rate at different probability thresholds.
+My model achieved an AUC of 0.85, meaning it can correctly distinguish churn vs not churn customers 85% of the time, which is a strong performance for telecom churn problems.”
+
+#### 📈 Understanding the Graph
+
+- X-Axis → False Positive Rate
+- (FPR = how many NON-CHURN customers we incorrectly say “will churn”)
+
+- Y-Axis → True Positive Rate
+- (TPR / Recall = how many churn customers we correctly catch)
 
 ### 🔹 Avarage Chrun by contract 
 
