@@ -117,7 +117,7 @@ Shows how well the model distinguishes between churned and non-churned customers
 
 ### 🔹 ROC-CURVE
 
-![ROC-CURVE](images\roc_auc_curve.png)
+![ROC-CURVE](images/roc_auc_curve.png)
 
 **Insight:**
 
