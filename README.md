@@ -60,15 +60,17 @@ This model prioritizes high recall to capture maximum churn-prone users.
 Survival analysis helps understand **how long customers stay** before churning.
 
 ### 🔹 Customer Survival Over Time
-(<img src="images/costomer-survival-over-time.png" width="300" height="300" alt="Customer Survival Over Time">)
+
+<img src="images/costomer-survival-over-time.png" width="700" height="400" alt="Customer Survival Over Time">
+
 **Insight:**  
 “This shows how customer survival decreases over time.
 Most churn happens in the early months, which highlights the importance of early engagement.”
 
 ### 🔹 Average Churn Rate by Contract
-Customers with **month-to-month contracts** have a significantly higher churn rate compared to long-term contracts.
 
-![Average Churn Rate by Contract](images/survival-by-contract-type.png)
+Customers with **month-to-month contracts** have a significantly higher churn rate compared to long-term contracts.
+<img src="images/survival-by-contract-type.png" width="700" height="400" alt="Average Churn Rate by Contract">
 
 **Insight:**  
 “Month-to-month customers churn much earlier than customers on one-year or two-year contracts.
@@ -77,7 +79,8 @@ This suggests long-term contracts help improve retention
 ---
 
 ### 🔹 Survival by Payment Method
-![Survival by Payment Method](images/survival-by-payment-methode.png)
+
+<img src="images/survival-by-payment-methode.png" width="700" height="400" alt="Survival by Payment Method">
 
 **Insight:**  
 Electronic check users churn faster compared to other payment methods.
@@ -87,7 +90,8 @@ This may be due to payment friction or missed payments.”
 ---
 
 ### 🔹 Survival by Internet Service
-![Survival by Internet Service](images/survival-by-internet-type.png)
+
+<img src="images/survival-by-internet-type.png" width="700" height="400" alt="Survival by Internet Service">
 
 **Insight:**  
 Fiber optic users show higher churn risk compared to DSL users.
@@ -95,7 +99,8 @@ Fiber optic users show higher churn risk compared to DSL users.
 
 ---
 ### 🔹 Survival by Monthly Charges (Binned)
-![Survival by Internet Service](images/survival-by-monthly-charges.png)
+
+<img src="images/survival-by-monthly-charges.png" width="700" height="400" alt="Survival by Monthly Charges">
 
 **Insight:**  
 Customers with higher monthly charges tend to churn faster, indicating price sensitivity or perceived value issues.”
@@ -106,7 +111,7 @@ Customers with higher monthly charges tend to churn faster, indicating price sen
 ### 🔹 Confusion Matrix
 Shows how well the model distinguishes between churned and non-churned customers.
 
-![Confusion Matrix](images/confusion-matrix.png)
+<img src="images/confusion-matrix.png" width="700" height="400" alt="Confusion Matrix">
 
 **Insight:**
 - High true positives → good churn detection
@@ -116,7 +121,7 @@ Shows how well the model distinguishes between churned and non-churned customers
 
 ### 🔹 ROC-CURVE
 
-![ROC-CURVE](images/roc_auc_curve.png)
+<img src="images/roc_auc_curve.png" width="700" height="400" alt="ROC-CURVE">
 
 **Insight:**
 
@@ -133,15 +138,14 @@ My model achieved an AUC of 0.85, meaning it can correctly distinguish churn vs 
 
 ### 🔹 Avarage Chrun by contract 
 
-![Top 10 Feature Importances](images/avg-churn-rate.png)
-
+<img src="images/avg-churn-rate.png" width="700" height="400">
 
 ## ⭐ Feature Importance
 
 ### 🔹 Top 10 Feature Importances
 Identifies the most influential features driving churn predictions.
 
-![Top 10 Feature Importances](images/ten-importent-feature.png)
+<img src="images/ten-importent-feature.png" width="700" height="400" alt="Top 10 Feature Importances">
 
 **Key Influential Features:**
 - Contract type
