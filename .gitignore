@@ -11,3 +11,6 @@ ENV/
 *.nbconvert.ipynb
 __pycache__
 dsevn
+venv
+__pycache__/
+ .env
