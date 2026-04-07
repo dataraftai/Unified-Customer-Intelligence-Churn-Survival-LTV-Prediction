@@ -21,6 +21,8 @@ data/
 *.pkl.bak
 *.joblib.bak
 *.csv
+.vscode 
+.dsenv
 
 
 
