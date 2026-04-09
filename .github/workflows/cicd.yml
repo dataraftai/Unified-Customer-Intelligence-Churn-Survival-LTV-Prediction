@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v6
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v4
         with:
           python-version: '3.11'
 
@@ -49,7 +49,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/churn-ltv-api:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/churn-ltv-api:latest
 
       - name: Image digest
         run: echo ${{ steps.build-and-publish.outputs.digest }}
